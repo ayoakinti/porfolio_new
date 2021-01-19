@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 body {
     margin: 0;
     font-family: "space_grotesk";
@@ -78,7 +82,7 @@ a {
 .header-menu-item {
     height: 100px;
     width: 630px;
-    background: #FF564F;
+    background: rgb(46, 124, 197);
     display: flex;
     align-items: center;
     padding-left: 60px;
@@ -91,9 +95,9 @@ a {
 .header-area .header-item .header-menu-btn a {
     line-height: 54px;
     width: 120px;
-    background: #FF564F;
+    background: rgb(46, 124, 197);
     color: #fff;
-    border-color: #FF564F;
+    border-color: rgb(46, 124, 197);
     border-radius: 0;
     text-transform: uppercase;
     padding: 0;
@@ -105,9 +109,9 @@ a {
 }
 
 .landing {
-    background: #ffe4d9;
+    // background: #ffe4d9;
     position: relative;
-    height: 100%;
+    height: 100vh;
 }
 
 .landing-text {
@@ -116,24 +120,6 @@ a {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.justify-content-end {
-    justify-content: flex-end;
-}
-
-.col-lg-7 {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
 }
 
 .landing-content {
@@ -146,7 +132,7 @@ a {
 .landing-content>span {
     font-size: 25px;
     font-family: "space_grotesk";
-    color: #FF564F;
+    color: rgb(46, 124, 197);
     text-transform: uppercase;
     padding-bottom: 4px;
 }
@@ -160,17 +146,17 @@ a {
     position: relative;
 }
 
-.landing-content .title span::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: -45px;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/hero-line-2.png);
-    z-index: -1;
-    background-repeat: no-repeat;
-}
+// .landing-content .title span::before {
+//     position: absolute;
+//     content: '';
+//     left: 0;
+//     bottom: -45px;
+//     width: 100%;
+//     height: 100%;
+//     background-image: url(../images/hero-line-2.png);
+//     z-index: -1;
+//     background-repeat: no-repeat;
+// }
 
 .landing-content .text {
     position: relative;
@@ -190,7 +176,7 @@ a {
     transform: translateY(-50%);
     width: 5px;
     height: 84px;
-    background: #FF564F;
+    background: rgb(46, 124, 197);
 }
 
 .main-btn {
@@ -221,13 +207,22 @@ ul {
     list-style-type: none;
 }
 
+a {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    text-decoration: none !important;
+}
+
 .landing-content ul li {
     display: inline-block;
 }
 
 .landing-content ul li a.main-btn {
-    background: #FF564F;
-    border-color: #FF564F;
+    background: rgb(46, 124, 197);
+    border-color: rgb(46, 124, 197);
     color: #fff;
     font-size: 14px;
     font-family: "space_grotesk";
@@ -273,6 +268,9 @@ img {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .landing .landing-social ul li {
@@ -282,19 +280,320 @@ img {
 .landing .landing-social ul li a {
     height: 45px;
     width: 45px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    // text-align: center;
     line-height: 48px;
     border: 1px solid #33415C;
     color: #000;
     text-transform: uppercase;
-    display: inline-block;
+    // display: inline-block;
     margin-left: 3px;
 }
 
 .landing .landing-image {
     position: absolute;
+    display: flex;
+    justify-content: center;
     left: 58px;
     bottom: 0;
+}
+
+.about {
+    background: #F5F5F5;
+    padding: 100px 0;
+}
+
+.about-3-content .content .title {
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.about-3-content .content .text {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "space_grotesk";
+    color: #000;
+    text-align: justify;
+}
+
+.update-news-area {
+    background: #fff;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.our-services-title {
+    padding-bottom: 22px;
+}
+
+.our-services-title .title {
+    // color: #fff;
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.our-services-title span {
+    // color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "space_grotesk";
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.update-news-item {
+    padding-bottom: 100px;
+}
+
+.update-news-item .update-news-content > span {
+    background: rgba(86, 79, 255, 0.1);
+    line-height: 43px;
+    width: 130px;
+    padding: 0;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    color: #564fff;
+    font-family: "space_grotesk";
+}
+
+.update-news-item .update-news-content .title {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    line-height: 36px;
+    margin-top: 30px;
+    margin-bottom: 28px;
+}
+
+.update-news-item .update-news-content .text {
+    font-family: "space_grotesk";
+}
+
+.update-news-item .update-news-content a {
+    margin-top: 48px;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "space_grotesk";
+    text-transform: uppercase;
+    color: #707070;
+}
+
+.update-news-item .update-news-content a span {
+    height: 30px;
+    width: 30px;
+    background: rgb(46, 124, 197);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.contact-us-area {
+    position: relative;
+    z-index: 10;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.contact-us-area .section__bg {
+    background-image: url(../images/contact-us-bg.png);
+}
+
+.section__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact-us-area .contact-us-title {
+    padding-bottom: 48px;
+}
+
+.contact-us-area .contact-us-title .title {
+    color: #fff;
+    font-size: 54px;
+    line-height: 62px;
+    font-family: "Playfair Display", serif;
+}
+
+.contact-us-box {
+    background: #fff;
+    padding: 50px 45px;
+    margin-right: 80px;
+    font-weight: 300;
+    color: #000;
+}
+
+.contact-us-box .title {
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.contact-us-box p {
+    padding-left: 5px;
+    margin-bottom: 33px;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutters>.col, .no-gutters>[class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.contact-us-box .input-box input {
+    width: 100%;
+    background: #F5F5F5;
+    border: 0;
+    padding-left: 20px;
+    line-height: 60px;
+    color: #33415C;
+    font-size: 16px;
+}
+
+.contact-us-box .input-box textarea {
+    width: 100%;
+    background: #F5F5F5;
+    border: 0;
+    padding-left: 20px;
+    height: 120px;
+    color: #33415C;
+    font-size: 16px;
+    resize: none;
+    padding-top: 15px;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+.checkbox_common li input[type="checkbox"] + label span, 
+.checkbox_common li input[type="checkbox"]:checked + label span {
+    -webkit-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+}
+.checkbox_common li input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -1px 15px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #F5F5F5;
+    position: relative;
+    background: #F5F5F5;
+}
+
+.checkbox_style5 li input[type="checkbox"] + label span {
+    border-radius: 0px;
+}
+
+.checkbox_style5 li input[type="checkbox"] + label span::before {
+    color: rgb(46, 124, 197);
+}
+
+.checkbox_common li input[type="checkbox"] + label span:before {
+    color: #fff;
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 11px;
+    position: absolute;
+    text-align: center;
+    left: 3px;
+    top: -7px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+contact-us-box .input-box {
+    margin: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.checkbox_common {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+.checkbox_common li input[type="checkbox"] {
+    display: none;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+button, input {
+    overflow: visible;
+}
+
+.checkbox_common li label {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #000;
+    opacity: .8;
+}
+
+.contact-us-box .input-box {
+    margin: 5px;
+}
+
+.contact-us-box .input-box button {
+    width: 100%;
+    height: 62px;
+    width: 100%;
+    background: rgb(46, 124, 197);
+    border-color: rgb(46, 124, 197);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all linear 0.3s;
 }
 
 @media (min-width: 768px) {
@@ -311,13 +610,15 @@ img {
     .landing .landing-image {
         left: 0;
         width: 45%;
+        height: 70vh;
     }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
     .landing .landing-image {
         left: 0;
-        width: 50%;
+        width: 40%;
+        height: 70vh;
     }
 }
 
@@ -325,6 +626,7 @@ img {
     .landing .landing-image {
         position: static;
         width: 55%;
+        height: 40vh;
     }
 }
 
@@ -336,6 +638,7 @@ img {
     .landing-text {
         max-width: 540px;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -356,6 +659,12 @@ img {
     }
 }
 
+@media (max-width: 567px) {
+    .landing .landing-social ul {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 767px) {
     .header-menu-item {
         width: 100%;
@@ -367,7 +676,7 @@ img {
     }
 
     .landing-content {
-        padding-bottom: 100px;
+        padding-bottom: 0;
         margin-left: 0;
         padding-left: 0;
     }
@@ -400,4 +709,14 @@ img {
         position: static;
         width: 55%;
     }
+
+    .about-3-thumb {
+        margin-bottom: 30px;
+    }
+
+    .contact-us-box {
+        margin-right: 0;
+        padding: 50px 10px;
+    }
+
 }
