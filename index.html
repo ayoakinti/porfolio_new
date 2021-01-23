@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayomide Akintimehin's Portfolio</title>
-    <link rel="stylesheet" href="./scss/portfolio.css" />
+    <title>iamayoakinti</title>
+    <link rel="stylesheet" href="./scss/global/portfolio.css" />
+    <link rel="stylesheet" href="./scss/landing/landing.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,7 +27,7 @@
                 <img src="./images/header-dot.png" alt="Header-dot" />
               </a>
             </div> -->
-            <div class="header-menu-info d-none d-sm-block">
+            <div class="header-menu-info d-sm-block">
               <ul>
                 <li>
                   <span>Phone</span>
@@ -40,18 +41,21 @@
             </div>
           </div>
           <div class="header-menu-btn d-none d-md-block">
-            <a class="main-btn" href="#contact">Hire me</a>
+            <a class="main-btn" href="#contact">Contact me</a>
           </div>
         </div>
       </div>
       <div class="landing">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
         <div class="landing-text">
           <div class="row justify-content-end">
             <div class="col-lg-7">
               <div class="landing-content">
                 <span>Hello</span>
                 <h3 class="title">
-                  I am Ayomide Frontend <span>Engineer</span>
+                  I am Ayomide <br> Frontend <span>Engineer</span>
                 </h3>
                 <div class="text">
                   <p>
@@ -67,12 +71,6 @@
                       Download cv</a
                     >
                   </li>
-                  <!-- <li>
-                    <a class="main-btn main-btn-2" href="#">
-                      Learn more
-                      <img src="./images/icon/hero-icon-2.png" alt=""
-                    /></a>
-                  </li> -->
                 </ul>
               </div>
             </div>
@@ -97,21 +95,21 @@
             </li>
           </ul>
         </div>
-        <div class="landing-image">
+        <!-- <div class="landing-image align-items-end">
           <img
             src="./images/ayo.jpg"
             alt=""
-            height="80%"
-            style="object-fit: contain"
+            height="100%"
+            style="object-fit: cover"
           />
-        </div>
+        </div> -->
       </div>
       <div class="about">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-5">
               <div
-                class="about-3-thumb animated wow fadeInLeft animated"
+                class="about-3-thumb animated wow fadeInLeft animated d-flex justify-content-center"
                 data-wow-duration="3000ms"
                 data-wow-delay="0ms"
                 style="
@@ -189,9 +187,9 @@
             <div class="row align-items-center">
               <div class="col-lg-5 order-2 order-lg-1">
                 <div class="update-news-content">
-                  <span>iOS App Design</span>
+                  <span>Web App Design</span>
                   <h3 class="title">
-                    Wide with title two style layout helsepartner nord
+                    Gricd Enterprise Web Application
                   </h3>
                   <div class="text">
                     <p>
@@ -200,8 +198,8 @@
                       transform their brands and businesses.
                     </p>
                   </div>
-                  <a href="#"
-                    >View case study
+                  <a href="https://beta.gricd.com" target="_blank"
+                    >View application
                     <span
                       ><img src="./images/icon/hero-icon-2.png" alt="" /></span
                   ></a>
@@ -219,7 +217,7 @@
                     animation-name: fadeInRight;
                   "
                 >
-                  <img src="./images/update-news-1.jpg" alt="" />
+                  <img src="./images/gricd.png" alt="" />
                 </div>
               </div>
             </div>
@@ -240,14 +238,14 @@
                     animation-name: fadeInLeft;
                   "
                 >
-                  <img src="./images/update-news-2.jpg" alt="" />
+                  <img src="./images/algo.png" alt="" />
                 </div>
               </div>
               <div class="col-lg-5">
                 <div class="update-news-content">
-                  <span>iOS App Design</span>
+                  <span>VS Code</span>
                   <h3 class="title">
-                    Wide with title two style layout helsepartner nord
+                    Data Structures and Algorithms Courses
                   </h3>
                   <div class="text">
                     <p>
@@ -256,8 +254,8 @@
                       transform their brands and businesses.
                     </p>
                   </div>
-                  <a href="#"
-                    >View case study
+                  <a href="https://github.com/iamayoakinti/algorithms/tree/dev" target="_blank"
+                    >View source code
                     <span
                       ><img src="./images/icon/hero-icon-2.png" alt="" /></span
                   ></a>
@@ -335,16 +333,32 @@
                   Give me a call or drop a message, I endeavour to <br />
                   respond to all enquiries within 24 hours.
                 </p>
-                <form target="_blank" action="https://getform.io/f/44a48cb2-3f9e-46a4-8796-15512b40d6a0" method="POST">
+                <form
+                  target="_blank"
+                  action="https://getform.io/f/44a48cb2-3f9e-46a4-8796-15512b40d6a0"
+                  method="POST"
+                >
                   <div class="row no-gutters">
                     <div class="col-lg-6">
                       <div class="input-box mt-10">
-                        <input type="text" placeholder="Your name" name="name" id="name" required />
+                        <input
+                          type="text"
+                          placeholder="Your name"
+                          name="name"
+                          id="name"
+                          required
+                        />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="input-box mt-10">
-                        <input type="email" placeholder="Email address" name="email" id="email" required />
+                        <input
+                          type="email"
+                          placeholder="Email address"
+                          name="email"
+                          id="email"
+                          required
+                        />
                       </div>
                     </div>
                     <!-- <div class="col-lg-6">
