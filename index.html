@@ -29,10 +29,10 @@
             </div> -->
             <div class="header-menu-info d-sm-block">
               <ul>
-                <li>
+                <!-- <li>
                   <span>Phone</span>
                   <h4 class="title">+234 814 011 3415</h4>
-                </li>
+                </li> -->
                 <li>
                   <span>Email</span>
                   <h4 class="title">ayoakinti@gmail.com</h4>
@@ -45,28 +45,33 @@
           </div>
         </div>
       </div>
-      <div class="landing">
-        <div id="stars"></div>
+      <div id="home" class="landing">
+        <!-- <div id="stars"></div>
         <div id="stars2"></div>
-        <div id="stars3"></div>
+        <div id="stars3"></div> -->
         <div class="landing-text">
           <div class="row justify-content-end">
             <div class="col-lg-7">
               <div class="landing-content">
                 <span>Hello</span>
                 <h3 class="title">
-                  I am Ayomide <br> Frontend <span>Engineer</span>
+                  I am Ayomide <br />
+                  Frontend <span>Engineer</span>
                 </h3>
-                <div class="text">
+                <!-- <div class="text">
                   <p>
-                    Sitting proudly atop is the two-storey penthouse. The nati
-                    master bedroom suite is phenomenally spacious makes the most
-                    unrivalled.
+                    Whether you think you can, or you think you can't, either way you are right
                   </p>
-                </div>
+                  <p style="float: right">
+                    ~Henry Ford
+                  </p>
+                </div> -->
                 <ul>
                   <li>
-                    <a class="main-btn" href="#"
+                    <a
+                      class="main-btn"
+                      href="./Ayomide Akintimehin Resume.pdf"
+                      download
                       ><img src="./images/icon/hero-icon-1.png" alt="" />
                       Download cv</a
                     >
@@ -80,21 +85,46 @@
           <ul>
             <li>
               <a href="https://twitter.com/iamayoakinti" target="_blank">
-                <img src="./images/twitter.svg" alt="TW" height="32px" width="32px" />
+                <img
+                  src="./images/twitter.svg"
+                  alt="TW"
+                  height="32px"
+                  width="32px"
+                />
               </a>
             </li>
             <li>
               <a href="https://github.com/iamayoakinti" target="_blank"
-                ><img src="./images/github.png" alt="GH width="32px" height="32px""
-              /></a>
+                ><img src="./images/github.png" alt="GH width="32px"
+                height="32px"" /></a
+              >
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/ayomide-akintimehin-b78594139/" target="_blank">
-                <img src="./images/linkedin.svg" alt="LN" width="32px" height="32px">
+              <a
+                href="https://www.linkedin.com/in/ayomide-akintimehin-b78594139/"
+                target="_blank"
+              >
+                <img
+                  src="./images/linkedin.svg"
+                  alt="LN"
+                  width="32px"
+                  height="32px"
+                />
               </a>
             </li>
           </ul>
         </div>
+        <nav id="navbar" class="sticky-nav">
+          <div id="nav-content" class="link-wrap">
+            <a id="nav-home" onclick="closeNavMenu()" href="#home" class="nav-link">Home</a>
+            <a id="nav-about" onclick="closeNavMenu()" href="#about" class="nav-link">About</a>
+            <a id="nav-projects" onclick="closeNavMenu()" href="#projects" class="nav-link">Projects</a>
+            <a id="nav-contact" onclick="closeNavMenu()" href="#contact" class="nav-link">Contact</a>
+          </div>
+          <div class="d-sm-none">
+            <img id="menu-button" src="./images/menu.png" height="20" alt="">
+          </div>
+        </nav>
         <!-- <div class="landing-image align-items-end">
           <img
             src="./images/ayo.jpg"
@@ -104,20 +134,14 @@
           />
         </div> -->
       </div>
-      <div class="about">
+      <div id="about" class="about">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-5">
               <div
-                class="about-3-thumb animated wow fadeInLeft animated d-flex justify-content-center"
+                class="about-3-thumb d-flex justify-content-center show-on-scroll-left"
                 data-wow-duration="3000ms"
                 data-wow-delay="0ms"
-                style="
-                  visibility: visible;
-                  animation-duration: 3000ms;
-                  animation-delay: 0ms;
-                  animation-name: fadeInLeft;
-                "
               >
                 <img src="./images/ayo.jpg" alt="" />
               </div>
@@ -170,7 +194,7 @@
           </div>
         </div>
       </div>
-      <div class="update-news-area pt-100">
+      <div id="projects" class="update-news-area pt-100">
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <div class="our-services-title text-center">
@@ -193,9 +217,9 @@
                   </h3>
                   <div class="text">
                     <p>
-                      From research and strategy to design and impletion, we
-                      partner with of the world’s most impactful companies to
-                      transform their brands and businesses.
+                      Displays data from a mote, which is an IOT device that
+                      monitors and records ambient temperature and humidity, and
+                      even GPS for up to 30 days.
                     </p>
                   </div>
                   <a href="https://beta.gricd.com" target="_blank"
@@ -207,15 +231,9 @@
               </div>
               <div class="col-lg-7 order-1 order-lg-2">
                 <div
-                  class="update-news-thumb text-right animated wow fadeInRight animated"
+                  class="update-news-thumb text-right wow show-on-scroll-right"
                   data-wow-duration="3000ms"
                   data-wow-delay="0ms"
-                  style="
-                    visibility: visible;
-                    animation-duration: 3000ms;
-                    animation-delay: 0ms;
-                    animation-name: fadeInRight;
-                  "
                 >
                   <img src="./images/gricd.png" alt="" />
                 </div>
@@ -228,15 +246,9 @@
             <div class="row align-items-center">
               <div class="col-lg-7">
                 <div
-                  class="update-news-thumb animated wow fadeInLeft animated"
+                  class="update-news-thumb wow show-on-scroll-left"
                   data-wow-duration="3000ms"
                   data-wow-delay="0ms"
-                  style="
-                    visibility: visible;
-                    animation-duration: 3000ms;
-                    animation-delay: 0ms;
-                    animation-name: fadeInLeft;
-                  "
                 >
                   <img src="./images/algo.png" alt="" />
                 </div>
@@ -244,17 +256,17 @@
               <div class="col-lg-5">
                 <div class="update-news-content">
                   <span>VS Code</span>
-                  <h3 class="title">
-                    Data Structures and Algorithms Courses
-                  </h3>
+                  <h3 class="title">Data Structures and Algorithms Courses</h3>
                   <div class="text">
                     <p>
-                      From research and strategy to design and impletion, we
-                      partner with of the world’s most impactful companies to
-                      transform their brands and businesses.
+                      Data Structures and Algorithm Solutions in JavaScript,
+                      from the Data Structures and Algorithms specialization
+                      course I'm taking.
                     </p>
                   </div>
-                  <a href="https://github.com/iamayoakinti/algorithms/tree/dev" target="_blank"
+                  <a
+                    href="https://github.com/iamayoakinti/algorithms/tree/dev"
+                    target="_blank"
                     >View source code
                     <span
                       ><img src="./images/icon/hero-icon-2.png" alt="" /></span
@@ -270,18 +282,17 @@
               <div class="col-lg-5 order-2 order-lg-1">
                 <div class="update-news-content">
                   <span>Web App Design</span>
-                  <h3 class="title">
-                    Movie Search App (ReactJS with Hooks)
-                  </h3>
+                  <h3 class="title">Movie Search App (ReactJS with Hooks)</h3>
                   <div class="text">
                     <p>
-                      From research and strategy to design and impletion, we
-                      partner with of the world’s most impactful companies to
-                      transform their brands and businesses.
+                      A fun web application which allows you search for your
+                      favorite movies and shows you the year they were released.
                     </p>
                   </div>
-                  <a href="https://github.com/iamayoakinti/movie_app" target="_blank"
-                    >View Source code
+                  <a
+                    href="https://movie-search-app02.netlify.app"
+                    target="_blank"
+                    >View Application
                     <span
                       ><img src="./images/icon/hero-icon-2.png" alt="" /></span
                   ></a>
@@ -289,15 +300,9 @@
               </div>
               <div class="col-lg-7 order-1 order-lg-2">
                 <div
-                  class="update-news-thumb text-right animated wow fadeInRight animated"
+                  class="update-news-thumb text-right wow show-on-scroll-right"
                   data-wow-duration="3000ms"
                   data-wow-delay="0ms"
-                  style="
-                    visibility: visible;
-                    animation-duration: 3000ms;
-                    animation-delay: 0ms;
-                    animation-name: fadeInRight;
-                  "
                 >
                   <img src="./images/movie.png" alt="" />
                 </div>
@@ -359,15 +364,9 @@
                 </h3>
               </div>
               <div
-                class="contact-us-box animated wow fadeInLeft animated"
+                class="contact-us-box wow show-on-scroll-right"
                 data-wow-duration="3000ms"
                 data-wow-delay="0ms"
-                style="
-                  visibility: visible;
-                  animation-duration: 3000ms;
-                  animation-delay: 0ms;
-                  animation-name: fadeInLeft;
-                "
               >
                 <h3 class="title">Get in Touch</h3>
                 <p>

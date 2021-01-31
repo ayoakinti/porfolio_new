@@ -1,8 +1,7 @@
 .landing {
-  background: radial-gradient(ellipse at bottom, #edf2f4 0%, #d90429 100%);
+  background: #ffe4d9;
   position: relative;
-  overflow: hidden;
-  min-height: 100vh;
+  height: calc(100vh + 53px);
 }
 
 #stars {

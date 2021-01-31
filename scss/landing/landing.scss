@@ -99,11 +99,11 @@
 // https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429
 
 .landing {
-  // background: #ffe4d9;
-  background: radial-gradient(ellipse at bottom, #edf2f4 0%, #d90429 100%);
+  background: #ffe4d9;
+  // background: radial-gradient(ellipse at bottom, #edf2f4 0%, #d90429 100%);
   position: relative;
-  overflow: hidden;
-  min-height: 100vh;
+  // overflow: hidden;
+  height: calc(100vh + 53px);
 }
 
 #stars {
