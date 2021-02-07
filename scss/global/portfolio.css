@@ -303,7 +303,6 @@ img {
 }
 
 .about {
-  background: #8d99ae;
   padding: 100px 0;
 }
 
@@ -611,6 +610,20 @@ input {
           animation-delay: 0ms;
   -webkit-animation-name: fadeInRight;
           animation-name: fadeInRight;
+}
+
+.animate__bounceInDown {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+
+.animate__bounceInUp {
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
 }
 
 .landing nav {

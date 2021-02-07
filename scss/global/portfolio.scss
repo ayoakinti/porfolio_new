@@ -46,6 +46,7 @@ a {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   text-decoration: none;
+  // color: #8d99ae !important;
 }
 
 .header-area {
@@ -302,7 +303,7 @@ img {
 
 .about {
   // background: #f5f5f5;
-  background: #8d99ae;
+  // background: #8d99ae;
   padding: 100px 0;
 }
 
@@ -617,6 +618,20 @@ input {
   animation-name: fadeInRight;
 }
 
+.animate__bounceInDown {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+
+.animate__bounceInUp {
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+
 .landing nav {
   position: absolute;
   bottom: 0;
@@ -809,12 +824,11 @@ input {
     overflow: hidden;
     transition: 0.5s ease-out;
     padding: 0 10px;
-
   }
   .landing nav {
     justify-content: flex-end;
   }
-  .nav-content-visible{
+  .nav-content-visible {
     height: 195px;
     padding: 20px 10px;
   }
